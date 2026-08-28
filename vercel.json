@@ -1,6 +1,3 @@
 {
-  "version": 2,
-  "name": "dr-heartwala",
-  "cleanUrls": true,
-  "trailingSlash": false
+  "cleanUrls": true
 }
