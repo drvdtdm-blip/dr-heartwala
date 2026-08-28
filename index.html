@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of Dr. V.D. Tripathi, MD, DM - Leading Interventional Cardiologist. Professional cardiac care, angioplasty, pacemaker implantation, and consultations under the Dr Heartwala brand.">
+    <title>Dr. V.D. Tripathi | Dr Heartwala - Interventional Cardiologist</title>
+    <!-- Google Fonts: Outfit for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body class="light-theme">
+    <!-- Background Animation (EKG / Grid) -->
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-container">
+        <div class="navbar">
+            <div class="logo">
+                <span class="heart-pulse-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="pulse-svg">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                        <path d="M3.22 12H7l1.5-3 2 6 1.5-4 1.5 1h3.78" stroke-dasharray="100" class="ekg-path"/>
+                    </svg>
+                </span>
+                <div class="logo-text">
+                    <span class="brand-name">Dr Heartwala</span>
+                    <span class="brand-sub">Dr. V.D. Tripathi, MD, DM</span>
+                </div>
+            </div>
+            
+            <nav class="nav-links" id="nav-links">
+                <button class="nav-tab active" data-tab="home" id="tab-btn-home">
+                    <i class="fa-solid fa-house-chimney"></i> Home
+                </button>
+                <button class="nav-tab" data-tab="about" id="tab-btn-about">
+                    <i class="fa-solid fa-user-doctor"></i> About Me
+                </button>
+                <button class="nav-tab" data-tab="book" id="tab-btn-book">
+                    <i class="fa-solid fa-book-open"></i> Book
+                </button>
+                <button class="nav-tab" data-tab="research" id="tab-btn-research">
+                    <i class="fa-solid fa-graduation-cap"></i> Research
+                </button>
+                <!-- Placeholder for future tabs (disabled but visible to demonstrate expansion) -->
+                <button class="nav-tab future-tab" disabled title="Coming Soon">
+                    <i class="fa-solid fa-circle-plus"></i> Future Tab
+                </button>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-header" title="WhatsApp Chat (+91 93009 20091)">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span>Navigation</span>
+            <button class="drawer-close" id="drawer-close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="drawer-links">
+            <button class="drawer-tab active" data-tab="home">
+                <i class="fa-solid fa-house-chimney"></i> Home
+            </button>
+            <button class="drawer-tab" data-tab="about">
+                <i class="fa-solid fa-user-doctor"></i> About Me
+            </button>
+            <button class="drawer-tab" data-tab="book">
+                <i class="fa-solid fa-book-open"></i> Book
+            </button>
+            <button class="drawer-tab" data-tab="research">
+                <i class="fa-solid fa-graduation-cap"></i> Research
+            </button>
+            <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-modal btn-block">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
+            </a>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+        
+        <!-- ================= HOME TAB ================= -->
+        <section class="tab-panel active" id="panel-home">
+            <div class="hero-section">
+                <div class="hero-info">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        10+ Years Post-DM Experience
+                    </div>
+                    <h1 class="hero-title">
+                        Dr. V.D. Tripathi <br><span class="hero-is">is</span> <span class="gradient-text">Dr Heartwala</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Dr. V.D. Tripathi (MD, DM) is a leading Senior Interventional Cardiologist with <strong>10+ years of post-DM clinical experience</strong> dedicated to diagnosing and treating complex cardiovascular diseases. On social media, he is widely recognized as <strong>Dr Heartwala</strong>, where he translates advanced clinical cardiology into accessible heart-health guidance.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-modal btn-large">
+                            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                        <button class="btn btn-secondary btn-large" id="hero-btn-about">
+                            Know More About Me
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <!-- Heart EKG Card Graphic -->
+                    <div class="ekg-card glass-panel">
+                        <div class="card-header">
+                            <span class="card-title"><i class="fa-solid fa-heart-pulse text-accent"></i> Real-time EKG Monitor</span>
+                            <span class="card-status status-live">Live</span>
+                        </div>
+                        <div class="ekg-graph-container">
+                            <!-- SVG heartbeat line animated -->
+                            <svg class="ekg-svg" viewBox="0 0 400 150">
+                                <path class="ekg-grid-lines" d="M0,25 L400,25 M0,50 L400,50 M0,75 L400,75 M0,100 L400,100 M0,125 L400,125" />
+                                <path class="ekg-wave" d="M 0 75 L 80 75 L 90 60 L 100 90 L 110 75 L 130 75 L 140 30 L 150 120 L 160 75 L 180 75 L 190 70 L 200 80 L 208 75 L 400 75" />
+                            </svg>
+                        </div>
+                        <div class="card-footer">
+                            <div class="metric">
+                                <span class="metric-val">72</span>
+                                <span class="metric-unit">BPM</span>
+                            </div>
+                            <div class="metric-label">Normal Sinus Rhythm</div>
+                        </div>
+                    </div>
+
+                    <!-- Small Info Badge overlaying -->
+                    <div class="floating-badge glass-panel">
+                        <div class="fb-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                        <div class="fb-text">
+                            <h4>Specialist</h4>
+                            <p>Coronary Interventions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats/Milestones Grid -->
+            <div class="stats-grid">
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                    <h3 class="stat-number">10+</h3>
+                    <p class="stat-label">Years Post-DM Experience</p>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon"><i class="fa-solid fa-procedures"></i></div>
+                    <h3 class="stat-number">5,000+</h3>
+                    <p class="stat-label">Successful Procedures</p>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3 class="stat-number">10k+</h3>
+                    <p class="stat-label">Happy Hearts Treated</p>
+                </div>
+                <div class="stat-card glass-panel">
+                    <div class="stat-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                    <h3 class="stat-number">5,000+</h3>
+                    <p class="stat-label">Social Media Community</p>
+                </div>
+            </div>
+
+            <!-- Core Services Overview -->
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subheading">Clinical Scope</span>
+                    <h2>Key Specializations</h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fa-solid fa-syringe"></i></div>
+                        <h3>Angioplasty & Angiography</h3>
+                        <p>Minimally invasive procedures to diagnose and treat blocked coronary arteries using cutting-edge drug-eluting stents.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3>Device Implantation</h3>
+                        <p>Expert implantation of Pacemakers, ICDs, and CRT devices to manage arrhythmias and advanced heart failure.</p>
+                    </div>
+                    <div class="service-card glass-panel">
+                        <div class="service-icon"><i class="fa-solid fa-heart-circle-bolt"></i></div>
+                        <h3>Valvular & Structural Care</h3>
+                        <p>Advanced non-surgical, catheter-based interventions for valvular diseases and structural cardiac anomalies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT ME TAB ================= -->
+        <section class="tab-panel" id="panel-about">
+            <div class="about-layout">
+                <div class="about-profile-card glass-panel">
+                    <div class="profile-image-container">
+                        <!-- Custom designed Cardiology Avatar / Medical Icon Placeholder -->
+                        <div class="doctor-avatar">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                    </div>
+                    <h2 class="profile-name">Dr. V.D. Tripathi</h2>
+                    <p class="profile-title">MD, DM (Cardiology) | 10+ Yrs Post-DM Experience</p>
+                    <p class="profile-tagline">"Dedicated to healing hearts and saving lives with precision and empathy."</p>
+                    
+                    <div class="profile-socials">
+                        <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="social-icon social-whatsapp" aria-label="WhatsApp" title="WhatsApp (+91 93009 20091)"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/drheartwala/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram" title="Dr Heartwala Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube" title="Dr Heartwala YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/p/Dr-V-D-Tripathi-Heart-Specialist-100083253726535/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook" title="Dr V.D. Tripathi Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <div class="about-details">
+                    <div class="about-block glass-panel">
+                        <h3>Biography</h3>
+                        <p>
+                            Dr. V.D. Tripathi is a highly respected Senior <strong>Interventional Cardiologist</strong> with <strong>over 10 years of post-DM clinical experience</strong>. Holding <strong>MD (Medicine)</strong> and <strong>DM (Cardiology)</strong> degrees, he has spent more than a decade performing complex coronary interventions, angioplasties, and cardiac device implantations.
+                        </p>
+                        <p>
+                            Popularly known online as <strong>Dr Heartwala</strong>, Dr. Tripathi is passionate about spreading awareness regarding cardiovascular health, preventive measures, and lifestyle modifications to combat the rising incidence of heart ailments in the modern world.
+                        </p>
+                    </div>
+
+                    <div class="about-block glass-panel">
+                        <h3>Education & Training</h3>
+                        <ul class="timeline">
+                            <li class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">10+ Years Post-DM Practice</span>
+                                    <h4>DM in Cardiology</h4>
+                                    <p>Super-specialty qualification followed by 10+ years of dedicated clinical practice focused on complex interventional procedures, coronary angioplasty, hemodynamics, and pacemaker management.</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Post Graduation</span>
+                                    <h4>MD in General Medicine</h4>
+                                    <p>Comprehensive training in internal medicine, diagnosing complex systemic illnesses.</p>
+                                </div>
+                            </li>
+                            <li class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-date">Under Graduation</span>
+                                    <h4>MBBS</h4>
+                                    <p>Foundational medical education and residency rotating across clinical disciplines.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="about-block glass-panel">
+                        <h3>Clinical Philosophy</h3>
+                        <blockquote class="medical-quote">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p>As an interventional cardiologist, my goal is not just to open blocked arteries, but to guide my patients toward sustainable heart health. Technology gives us the power to save lives in emergency situations, but lifestyle and education empower patients to lead longer, healthier lives.</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ================= BOOK TAB ================= -->
+        <section class="tab-panel" id="panel-book">
+            <div class="book-showcase-container">
+                <div class="book-layout">
+                    <!-- Left: Book cover showcase -->
+                    <div class="book-cover-column">
+                        <div class="book-cover-wrapper">
+                            <div class="book-cover-spine"></div>
+                            <img src="dil_ki_baat_cover.jpg" alt="Dil Ki Baat Book Cover" class="book-cover-img">
+                        </div>
+                    </div>
+
+                    <!-- Right: Book details -->
+                    <div class="book-details-column glass-panel">
+                        <div class="badge">
+                            <span class="badge-dot"></span>
+                            First Edition
+                        </div>
+                        <h1 class="book-title">दिल की बात</h1>
+                        <h2 class="book-subtitle">पहला हार्ट अटैक रोक संभव है</h2>
+                        <h3 class="book-translated-title">Dil Ki Baat: Prevention of First Heart Attack is Possible</h3>
+                        
+                        <p class="book-author-text">
+                            By <strong>Dr. V. D. Tripathi</strong> (DM Cardiology)
+                        </p>
+
+                        <div class="book-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">ISBN</span>
+                                <span class="spec-value">978-93-5779-446-6</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Price</span>
+                                <span class="spec-value">₹ 300.00</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Language</span>
+                                <span class="spec-value">Hindi / English</span>
+                            </div>
+                        </div>
+
+                        <div class="book-actions">
+                            <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large" id="book-btn-youtube" aria-label="YouTube Content" title="Watch YouTube Content">
+                                <i class="fa-brands fa-youtube text-accent"></i> Watch YouTube Videos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Summary / Detail Sections -->
+                <div class="book-summary-grid">
+                    <div class="book-summary-block glass-panel">
+                        <h3>About the Book / पुस्तक के बारे में</h3>
+                        <p>
+                            डॉ. वी. डी. त्रिपाठी (डीएम कार्डियोलॉजी) द्वारा लिखित <strong>"दिल की बात"</strong> एक जन-जागरूकता पुस्तक है। चिकित्सा क्षेत्र में अपने लंबे और सफल करियर के दौरान, डॉ. त्रिपाठी ने हृदय रोगों के स्वरूप में एक चिंताजनक बदलाव देखा है। जो बीमारी पहले केवल बुजुर्गों तक सीमित थी, वह अब 30 और 40 वर्ष के युवाओं को अपना शिकार बना रही है।
+                        </p>
+                        <p>
+                            इसी उद्देश्य के साथ उन्होंने इस पुस्तक की रचना की है, ताकि आम जनता को हृदय रोगों के लक्षणों, संकेतों और एक स्वस्थ जीवनशैली के प्रति जागरूक किया जा सके जो 'पहले हार्ट अटैक' को रोकने में मदद कर सकते हैं।
+                        </p>
+                    </div>
+
+                    <div class="book-summary-block glass-panel">
+                        <h3>Key Takeaways / मुख्य बिंदु</h3>
+                        <ul class="takeaways-list">
+                            <li>
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <span><strong>पहला हार्ट अटैक रोकना संभव है:</strong> वैज्ञानिक और व्यावहारिक तरीकों से दिल के दौरों को रोकने के उपाय।</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <span><strong>प्रारंभिक लक्षणों की पहचान:</strong> सीने में दर्द, भारीपन या अन्य ऐसे संकेतों को पहचानना जिन्हें लोग सामान्यतः अनदेखा कर देते हैं।</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <span><strong>युवाओं में हृदय स्वास्थ्य:</strong> 30 और 40 वर्ष की आयु के युवाओं में बढ़ते हृदय रोगों के कारणों और रोकथाम पर विशेष ध्यान।</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check text-accent"></i>
+                                <span><strong>सरल भाषा में मार्गदर्शन:</strong> चिकित्सा विज्ञान की कठिन शब्दावली को आम बोलचाल की भाषा में समझाया गया है।</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        
+        <!-- ================= RESEARCH TAB ================= -->
+        <section class="tab-panel" id="panel-research">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subheading">Scientific Contribution</span>
+                    <h2>Cardiovascular Research & Publications</h2>
+                </div>
+
+                <!-- ResearchGate Highlight CTA Card -->
+                <div class="researchgate-card glass-panel">
+                    <div class="rg-card-content">
+                        <div class="rg-badge"><i class="fa-solid fa-square-share-nodes"></i> Academic Profile</div>
+                        <h3>Connect on ResearchGate</h3>
+                        <p>Access peer-reviewed articles, preprints, citations, conference papers, and academic collaborations by Dr. V.D. Tripathi. View research statistics and stay updated with his latest cardiac findings.</p>
+                        <a href="https://www.researchgate.net/profile/Vishwa-Deepak-Tripathi?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit ResearchGate Profile
+                        </a>
+                    </div>
+                    <div class="rg-card-icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Dr. V.D. Tripathi (Dr. Heartwala)</h3>
+                <p>MD, DM (Cardiology) | Senior Interventional Cardiologist</p>
+                <div class="social-links-footer">
+                    <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp (+91 93009 20091)"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/drheartwala/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/p/Dr-V-D-Tripathi-Heart-Specialist-100083253726535/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <p class="footer-whatsapp-text">
+                    <i class="fa-brands fa-whatsapp text-whatsapp"></i> 
+                    <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer">
+                        +91 93009 20091
+                    </a>
+                </p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="footer-nav-link" data-tab="home">Home</a></li>
+                    <li><a href="#" class="footer-nav-link" data-tab="about">About Me</a></li>
+                    <li><a href="#" class="footer-nav-link" data-tab="book">Book</a></li>
+                    <li><a href="#" class="footer-nav-link" data-tab="research">Research</a></li>
+                </ul>
+            </div>
+            <div class="footer-disclaimer">
+                <h4>Medical Disclaimer</h4>
+                <p>The content provided on this website is for informational and educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Dr Heartwala. All Rights Reserved. Designed with clinical care.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp" title="Chat on WhatsApp (+91 93009 20091)">
+        <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+        <span class="whatsapp-badge">Chat on WhatsApp</span>
+    </a>
+
+    <!-- Main Logic Script -->
+    <script src="app.js?v=2"></script>
+</body>
+</html>
