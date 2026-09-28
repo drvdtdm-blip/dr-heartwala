@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body class="dark-theme">
     <!-- Background Animation (EKG / Grid) -->
@@ -42,21 +42,23 @@
                 <button class="nav-tab" data-tab="about" id="tab-btn-about">
                     <i class="fa-solid fa-user-doctor"></i> About Me
                 </button>
+                <button class="nav-tab" data-tab="appointment" id="tab-btn-appointment">
+                    <i class="fa-solid fa-calendar-check"></i> Appointment
+                </button>
                 <button class="nav-tab" data-tab="book" id="tab-btn-book">
                     <i class="fa-solid fa-book-open"></i> Book
                 </button>
                 <button class="nav-tab" data-tab="research" id="tab-btn-research">
                     <i class="fa-solid fa-graduation-cap"></i> Research
                 </button>
-                <!-- Placeholder for future tabs (disabled but visible to demonstrate expansion) -->
-                <button class="nav-tab future-tab" disabled title="Coming Soon">
-                    <i class="fa-solid fa-circle-plus"></i> Future Tab
-                </button>
             </nav>
 
             <div class="nav-cta">
+                <a href="https://www.eka.care/clinic/vision-cardiometabolic-care--66-55774368" target="_blank" rel="noopener noreferrer" class="btn btn-eka-header" title="Book Appointment on Eka Care">
+                    <i class="fa-solid fa-calendar-check"></i> Book Appointment
+                </a>
                 <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-header" title="WhatsApp Chat (+91 93009 20091)">
-                    <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
                 </a>
             </div>
             
@@ -79,12 +81,18 @@
             <button class="drawer-tab" data-tab="about">
                 <i class="fa-solid fa-user-doctor"></i> About Me
             </button>
+            <button class="drawer-tab" data-tab="appointment">
+                <i class="fa-solid fa-calendar-check"></i> Appointment
+            </button>
             <button class="drawer-tab" data-tab="book">
                 <i class="fa-solid fa-book-open"></i> Book
             </button>
             <button class="drawer-tab" data-tab="research">
                 <i class="fa-solid fa-graduation-cap"></i> Research
             </button>
+            <a href="https://www.eka.care/clinic/vision-cardiometabolic-care--66-55774368" target="_blank" rel="noopener noreferrer" class="btn btn-eka-modal btn-block">
+                <i class="fa-solid fa-calendar-check"></i> Book Appointment (Eka Care)
+            </a>
             <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-modal btn-block">
                 <i class="fa-brands fa-whatsapp"></i> WhatsApp Chat
             </a>
@@ -110,6 +118,9 @@
                         Dr. V.D. Tripathi (MD, DM) is an Interventional Cardiologist with <strong>10+ years of post-DM clinical experience</strong> in cardiovascular medicine. Known on social media as <strong>Dr Heartwala</strong>, he shares educational guidance on preventive cardiac care and heart health.
                     </p>
                     <div class="hero-actions">
+                        <a href="https://www.eka.care/clinic/vision-cardiometabolic-care--66-55774368" target="_blank" rel="noopener noreferrer" class="btn btn-eka-modal btn-large">
+                            <i class="fa-solid fa-calendar-check"></i> Book Appointment (Eka Care)
+                        </a>
                         <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-modal btn-large">
                             <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
                         </a>
@@ -203,6 +214,63 @@
             </div>
         </section>
 
+        <!-- ================= APPOINTMENT TAB ================= -->
+        <section class="tab-panel" id="panel-appointment">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="subheading">Clinical Consultation</span>
+                    <h2>Book Clinic Appointment</h2>
+                </div>
+
+                <!-- Main Eka Care Showcase Card -->
+                <div class="appointment-eka-card glass-panel">
+                    <div class="eka-card-header">
+                        <div class="badge">
+                            <span class="badge-dot"></span>
+                            Online Booking Available
+                        </div>
+                        <span class="clinic-location-tag"><i class="fa-solid fa-location-dot"></i> Rewa, Madhya Pradesh (486001)</span>
+                    </div>
+
+                    <div class="eka-clinic-details">
+                        <h1 class="clinic-title">Vision CardioMetabolic Care</h1>
+                        <p class="clinic-doctor">Senior Cardiologist: <strong>Dr. V.D. Tripathi</strong> (MD, DM Cardiology)</p>
+                        <p class="clinic-description">
+                            Book your in-clinic consultation for coronary care, pacemaker evaluation, hypertension, chest pain diagnosis, and preventive cardiac checkups directly via <strong>Eka Care</strong>. Access instant slot availability, consultation fee details, and patient feedback.
+                        </p>
+                    </div>
+
+                    <div class="eka-actions">
+                        <a href="https://www.eka.care/clinic/vision-cardiometabolic-care--66-55774368" target="_blank" rel="noopener noreferrer" class="btn btn-eka-modal btn-large">
+                            <i class="fa-solid fa-calendar-check"></i> Book Appointment on Eka Care
+                        </a>
+                        <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation%20at%20Vision%20CardioMetabolic%20Care." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-modal btn-large">
+                            <i class="fa-brands fa-whatsapp"></i> Inquire via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Features & Information Grid -->
+                <div class="appointment-features-grid">
+                    <div class="feature-card glass-panel">
+                        <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                        <h3>Instant Slot Confirmation</h3>
+                        <p>Select preferred consultation times, view live availability, and receive digital tokens via Eka Care.</p>
+                    </div>
+                    <div class="feature-card glass-panel">
+                        <div class="feature-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                        <h3>Comprehensive Diagnostics</h3>
+                        <p>Complete cardiac evaluation including ECG, ECHO guidance, pacemaker checks, and interventional care.</p>
+                    </div>
+                    <div class="feature-card glass-panel">
+                        <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+                        <h3>Verified Patient Reviews</h3>
+                        <p>Read verified patient feedback, ratings, and experience reports on the official Eka Care portal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- ================= ABOUT ME TAB ================= -->
         <section class="tab-panel" id="panel-about">
             <div class="about-layout">
@@ -219,9 +287,9 @@
                     
                     <div class="profile-socials">
                         <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="social-icon social-whatsapp" aria-label="WhatsApp" title="WhatsApp (+91 93009 20091)"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/drheartwala/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram" title="Dr Heartwala Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube" title="Dr Heartwala YouTube"><i class="fa-brands fa-youtube"></i></a>
-                        <a href="https://www.facebook.com/p/Dr-V-D-Tripathi-Heart-Specialist-100083253726535/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook" title="Dr V.D. Tripathi Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/drheartwala/" target="_blank" rel="noopener noreferrer" class="social-icon social-instagram" aria-label="Instagram" title="Dr Heartwala Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" class="social-icon social-youtube" aria-label="YouTube" title="Dr Heartwala YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/p/Dr-V-D-Tripathi-Heart-Specialist-100083253726535/" target="_blank" rel="noopener noreferrer" class="social-icon social-facebook" aria-label="Facebook" title="Dr V.D. Tripathi Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
 
@@ -319,8 +387,8 @@
                         </div>
 
                         <div class="book-actions">
-                            <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large" id="book-btn-youtube" aria-label="YouTube Content" title="Watch YouTube Content">
-                                <i class="fa-brands fa-youtube text-accent"></i> Watch YouTube Videos
+                            <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" class="btn btn-youtube btn-large" id="book-btn-youtube" aria-label="YouTube Content" title="Watch YouTube Content">
+                                <i class="fa-brands fa-youtube"></i> Watch YouTube Videos
                             </a>
                         </div>
                     </div>
@@ -379,7 +447,7 @@
                         <div class="rg-badge"><i class="fa-solid fa-square-share-nodes"></i> Academic Profile</div>
                         <h3>Connect on ResearchGate</h3>
                         <p>Access peer-reviewed articles, preprints, citations, conference papers, and academic collaborations by Dr. V.D. Tripathi. View research statistics and stay updated with his latest cardiac findings.</p>
-                        <a href="https://www.researchgate.net/profile/Vishwa-Deepak-Tripathi?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <a href="https://www.researchgate.net/profile/Vishwa-Deepak-Tripathi?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" class="btn btn-researchgate">
                             <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit ResearchGate Profile
                         </a>
                     </div>
@@ -403,10 +471,10 @@
                 <h3>Dr. V.D. Tripathi (Dr. Heartwala)</h3>
                 <p>MD, DM (Cardiology) | Senior Interventional Cardiologist</p>
                 <div class="social-links-footer">
-                    <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp (+91 93009 20091)"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/drheartwala/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.facebook.com/p/Dr-V-D-Tripathi-Heart-Specialist-100083253726535/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/919300920091?text=Hello%20Dr.%20Tripathi%2C%20I%20would%20like%20to%20inquire%20about%20a%20cardiology%20consultation." target="_blank" rel="noopener noreferrer" class="footer-social-link footer-whatsapp" aria-label="WhatsApp" title="WhatsApp (+91 93009 20091)"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/drheartwala/" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-instagram" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCqakZ_FIwFjaWjSZdnv_U2w" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-youtube" aria-label="YouTube" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/p/Dr-V-D-Tripathi-Heart-Specialist-100083253726535/" target="_blank" rel="noopener noreferrer" class="footer-social-link footer-facebook" aria-label="Facebook" title="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <p class="footer-whatsapp-text">
                     <i class="fa-brands fa-whatsapp text-whatsapp"></i> 
@@ -420,7 +488,8 @@
                 <ul>
                     <li><a href="#" class="footer-nav-link" data-tab="home">Home</a></li>
                     <li><a href="#" class="footer-nav-link" data-tab="about">About Me</a></li>
-                    <li><a href="#" class="footer-nav-link" data-tab="book">Book</a></li>
+                    <li><a href="#" class="footer-nav-link" data-tab="appointment">Book Appointment</a></li>
+                    <li><a href="#" class="footer-nav-link" data-tab="book">Book (Dil Ki Baat)</a></li>
                     <li><a href="#" class="footer-nav-link" data-tab="research">Research</a></li>
                 </ul>
             </div>

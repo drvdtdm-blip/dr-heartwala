@@ -20,6 +20,13 @@
     --color-teal: #38bdf8;   /* Electric Sky Cyan */
     --color-teal-rgb: 56, 189, 248;
     
+    /* Social Media Original Brand Colors */
+    --color-whatsapp: #25D366;
+    --color-instagram: #E4405F;
+    --color-youtube: #FF0000;
+    --color-facebook: #1877F2;
+    --color-researchgate: #00CCBB;
+    
     --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     
@@ -722,25 +729,63 @@ a {
 }
 
 .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--border-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
-    color: var(--text-secondary);
+    font-size: 1.15rem;
+    color: #ffffff;
     transition: var(--transition-quick);
 }
 
-.social-icon:hover {
-    color: var(--text-primary);
-    background: var(--color-accent);
-    border-color: var(--color-accent);
-    box-shadow: 0 4px 12px rgba(244, 63, 94, 0.25);
-    transform: translateY(-2px);
+.social-icon.social-whatsapp {
+    background: var(--color-whatsapp);
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+    border: 1px solid rgba(37, 211, 102, 0.4);
+}
+
+.social-icon.social-whatsapp:hover {
+    background: #20ba5a;
+    box-shadow: 0 8px 22px rgba(37, 211, 102, 0.6);
+    transform: translateY(-4px) scale(1.08);
+}
+
+.social-icon.social-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 4px 14px rgba(228, 64, 95, 0.35);
+    border: 1px solid rgba(228, 64, 95, 0.4);
+}
+
+.social-icon.social-instagram:hover {
+    background: linear-gradient(45deg, #f09433 10%, #e6683c 35%, #dc2743 60%, #cc2366 85%, #bc1888 100%);
+    box-shadow: 0 8px 22px rgba(228, 64, 95, 0.6);
+    transform: translateY(-4px) scale(1.08);
+}
+
+.social-icon.social-youtube {
+    background: var(--color-youtube);
+    box-shadow: 0 4px 14px rgba(255, 0, 0, 0.35);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+}
+
+.social-icon.social-youtube:hover {
+    background: #e60000;
+    box-shadow: 0 8px 22px rgba(255, 0, 0, 0.6);
+    transform: translateY(-4px) scale(1.08);
+}
+
+.social-icon.social-facebook {
+    background: var(--color-facebook);
+    box-shadow: 0 4px 14px rgba(24, 119, 242, 0.35);
+    border: 1px solid rgba(24, 119, 242, 0.4);
+}
+
+.social-icon.social-facebook:hover {
+    background: #1565c0;
+    box-shadow: 0 8px 22px rgba(24, 119, 242, 0.6);
+    transform: translateY(-4px) scale(1.08);
 }
 
 .about-details {
@@ -1115,18 +1160,63 @@ a {
 
 .social-links-footer {
     display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem;
+    gap: 0.85rem;
+    margin-top: 0.75rem;
 }
 
 .social-links-footer a {
-    color: var(--text-muted);
-    font-size: 1.2rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #ffffff;
     transition: var(--transition-quick);
 }
 
-.social-links-footer a:hover {
-    color: var(--color-accent);
+.social-links-footer a.footer-whatsapp {
+    background: var(--color-whatsapp);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.social-links-footer a.footer-whatsapp:hover {
+    background: #20ba5a;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.55);
+}
+
+.social-links-footer a.footer-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 4px 12px rgba(228, 64, 95, 0.3);
+}
+
+.social-links-footer a.footer-instagram:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 18px rgba(228, 64, 95, 0.55);
+}
+
+.social-links-footer a.footer-youtube {
+    background: var(--color-youtube);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+.social-links-footer a.footer-youtube:hover {
+    background: #e60000;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 18px rgba(255, 0, 0, 0.55);
+}
+
+.social-links-footer a.footer-facebook {
+    background: var(--color-facebook);
+    box-shadow: 0 4px 12px rgba(24, 119, 242, 0.3);
+}
+
+.social-links-footer a.footer-facebook:hover {
+    background: #1565c0;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 18px rgba(24, 119, 242, 0.55);
 }
 
 .footer-links h4, 
@@ -1759,19 +1849,20 @@ a {
     50% { box-shadow: 0 10px 35px rgba(37, 211, 102, 0.7); }
 }
 
-/* WhatsApp Nav & Modal Buttons */
+/* Social Media & Action Brand Buttons */
 .btn-whatsapp-header {
-    background: rgba(37, 211, 102, 0.12);
-    color: #128C7E;
-    border: 1px solid rgba(37, 211, 102, 0.3);
+    background: #25D366;
+    color: #ffffff;
+    border: 1px solid #25D366;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
 }
 
 .btn-whatsapp-header:hover {
-    background: #25D366;
+    background: #128C7E;
     color: #ffffff;
-    border-color: #25D366;
+    border-color: #128C7E;
     transform: translateY(-2px);
-    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
 }
 
 .btn-whatsapp-modal {
@@ -1779,23 +1870,60 @@ a {
     color: #ffffff;
     font-weight: 600;
     margin-top: 0.75rem;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
 }
 
 .btn-whatsapp-modal:hover {
     background: #128C7E;
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
 }
 
-.social-whatsapp:hover {
-    background: #25D366 !important;
-    border-color: #25D366 !important;
-    color: #ffffff !important;
+.btn-youtube {
+    background: #FF0000;
+    color: #ffffff;
+    border: 1px solid #FF0000;
+    box-shadow: 0 4px 14px rgba(255, 0, 0, 0.35);
+}
+
+.btn-youtube:hover {
+    background: #cc0000;
+    color: #ffffff;
+    border-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 0, 0, 0.45);
+}
+
+.btn-researchgate {
+    background: #00CCBB;
+    color: #ffffff;
+    border: 1px solid #00CCBB;
+    box-shadow: 0 4px 14px rgba(0, 204, 187, 0.35);
+}
+
+.btn-researchgate:hover {
+    background: #00b3a4;
+    color: #ffffff;
+    border-color: #00b3a4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 204, 187, 0.45);
 }
 
 .text-whatsapp {
-    color: #25D366 !important;
+    color: var(--color-whatsapp) !important;
+}
+
+.text-instagram {
+    color: var(--color-instagram) !important;
+}
+
+.text-youtube {
+    color: var(--color-youtube) !important;
+}
+
+.text-facebook {
+    color: var(--color-facebook) !important;
 }
 
 .footer-whatsapp-text {
@@ -1839,5 +1967,125 @@ a {
     font-size: 0.75rem;
     color: var(--text-muted);
     font-weight: 600;
+}
+
+/* ==========================================================================
+   Appointment Tab & Eka Care Integration Styles
+   ========================================================================== */
+.appointment-eka-card {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    background: linear-gradient(135deg, rgba(16, 27, 61, 0.85) 0%, rgba(0, 102, 255, 0.08) 100%);
+    border: 1px solid rgba(0, 102, 255, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 102, 255, 0.15);
+}
+
+.eka-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.clinic-location-tag {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-teal);
+    background: rgba(56, 189, 248, 0.1);
+    padding: 0.35rem 0.85rem;
+    border-radius: 50px;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.eka-clinic-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.clinic-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.clinic-doctor {
+    font-size: 1.1rem;
+    color: var(--color-teal);
+    font-weight: 600;
+}
+
+.clinic-description {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 850px;
+}
+
+.eka-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.appointment-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.feature-card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.feature-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(0, 102, 255, 0.1);
+    color: #0066FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    border: 1px solid rgba(0, 102, 255, 0.2);
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.feature-card p {
+    font-size: 0.925rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .appointment-features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .appointment-eka-card {
+        padding: 2rem;
+    }
+    
+    .clinic-title {
+        font-size: 2rem;
+    }
 }
 
