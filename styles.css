@@ -5,11 +5,11 @@
 
 /* --- Custom Variables & Tokens --- */
 :root {
-    --bg-main: #0a1128; /* Deep Midnight Royal Navy background */
-    --bg-card: rgba(16, 27, 61, 0.75);
-    --bg-card-hover: rgba(24, 38, 80, 0.88);
-    --border-color: rgba(255, 255, 255, 0.12);
-    --border-hover: rgba(244, 63, 94, 0.4);
+    --bg-main: #182442; /* Lighter Sapphire Slate background */
+    --bg-card: rgba(30, 45, 82, 0.75);
+    --bg-card-hover: rgba(42, 62, 110, 0.9);
+    --border-color: rgba(255, 255, 255, 0.16);
+    --border-hover: rgba(244, 63, 94, 0.5);
     
     --text-primary: #f8fafc; /* Crisp Bright White */
     --text-secondary: #94a3b8; /* Slate Soft Blue-Grey */
@@ -136,7 +136,7 @@ a {
     left: 0;
     width: 100%;
     z-index: 100;
-    background: rgba(10, 17, 40, 0.88);
+    background: rgba(24, 36, 66, 0.92);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border-color);
@@ -464,7 +464,7 @@ a {
     position: relative;
     border-radius: 8px;
     overflow: hidden;
-    background: rgba(6, 11, 26, 0.95);
+    background: rgba(18, 28, 52, 0.95);
     border: 1px solid var(--border-color);
 }
 
@@ -1030,7 +1030,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(6, 11, 26, 0.75);
+    background: rgba(18, 28, 52, 0.75);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     z-index: 150;
@@ -1129,7 +1129,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(6, 11, 26, 0.6);
+    background: rgba(18, 28, 52, 0.6);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     z-index: 240;
@@ -1145,7 +1145,7 @@ a {
 
 /* --- Footer --- */
 .footer-container {
-    background: #060b1a;
+    background: #101930;
     border-top: 1px solid var(--border-color);
     padding: 4rem 2rem 2rem 2rem;
     color: var(--text-secondary);
@@ -2158,7 +2158,7 @@ a {
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
-    background: linear-gradient(135deg, rgba(16, 27, 61, 0.85) 0%, rgba(0, 102, 255, 0.08) 100%);
+    background: linear-gradient(135deg, rgba(30, 45, 82, 0.85) 0%, rgba(0, 102, 255, 0.12) 100%);
     border: 1px solid rgba(0, 102, 255, 0.25);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 102, 255, 0.15);
 }
